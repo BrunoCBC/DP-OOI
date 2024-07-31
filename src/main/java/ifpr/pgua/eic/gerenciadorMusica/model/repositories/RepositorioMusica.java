@@ -22,6 +22,9 @@ public class RepositorioMusica {
             return Resultado.erro("Duração inválido!");
         }
 
+        Musica musica = new Musica(titulo, duracao, null);
+        musicas.add(musica);
+
         return Resultado.sucesso("Música cadastrada com sucesso!", musicas);
     }
 

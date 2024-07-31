@@ -30,6 +30,5 @@ public class CadastrarMusica {
         duracao = teclado.nextInt();
         res = repositorio.create(titulo, duracao);
         System.out.println("\n\n"+res.getMsg()+"\n\n");
-        teclado.close();
     }
 }
